@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // O(n) time, O(1) space.
     int findUnsortedSubarray(vector<int>& arr) {
         // TODO: Write your code here
         int n = arr.size();
