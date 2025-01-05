@@ -14,15 +14,10 @@ public:
         //O(n) time O(1) space
         // TODO: Write your code here
         ListNode *s = head;
-        int num = 0;
-        while (s != nullptr){
-            num++;
+        ListNode *f = head;
+        while(f != nullptr && f->next != nullptr){
             s = s->next;
-        }
-        num = num/2;
-        s = head;
-        for (int i = 0; i < num; i++){
-            s = s->next;
+            f = f->next->next;
         }
         return s;
     }
