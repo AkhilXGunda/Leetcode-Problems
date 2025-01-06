@@ -3,6 +3,7 @@ public:
     bool isHappy(int num) {
         // TODO: Write your code here
         // O(log(n)) time! O(1) space
+        // I initialliy said O(n) time, but actually it's O(log(n)) time because we have log_10 digits. Each digit squared can be atmost 81 (9 * 9). So num or n transforms to 81M (m = number of digits). basically num is reduced to 81M which is logarithmic. So O(log(n)) time ..super tricky!
         unsigned long long s = num;
         unsigned long long f = num;
         while(f != 1){
