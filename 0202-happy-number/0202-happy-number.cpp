@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isHappy(int num) {
         // TODO: Write your code here
-        // O(n) time O(1) space
+        // O(log(n)) time! O(1) space
         unsigned long long s = num;
         unsigned long long f = num;
         while(f != 1){
