@@ -12,7 +12,7 @@
 class Solution {
 public:
     bool hasPathSum(TreeNode* root, int sum) {
-        //O(n) time traversing each node once, O(1) space not storing anything
+        //O(n) time traversing each node once, O(n) space for recursion stack
         if (root == nullptr){
             return false;
         }
